@@ -1,20 +1,21 @@
+// File name: kinetic_energy.c
 #include <stdio.h>
 
 int main() {
-    float mass, acceleration, force;
+    float mass, velocity, kinetic_energy;
 
     // Prompt user for input
     printf("Enter mass (in kilograms): ");
     scanf("%f", &mass);
 
-    printf("Enter acceleration (in meters per second squared): ");
-    scanf("%f", &acceleration);
+    printf("Enter velocity (in meters per second): ");
+    scanf("%f", &velocity);
 
-    // Calculate force using F = m * a
-    force = mass * acceleration;
+    // Calculate kinetic energy
+    kinetic_energy = 0.5 * mass * velocity * velocity;
 
     // Display the result
-    printf("The calculated force is: %.2f Newtons\n", force);
+    printf("The kinetic energy is: %.2f Joules\n", kinetic_energy);
 
     return 0;
 }
