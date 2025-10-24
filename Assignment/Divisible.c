@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int num;
     printf("Enter a number: ");
     scanf("%d", &num);
@@ -12,4 +13,5 @@ int main() {
         printf("%d is not divisible by both 5 and 11", num);
     }
     return 0;
+
 }
