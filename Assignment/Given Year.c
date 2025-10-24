@@ -1,5 +1,6 @@
 #include <stdio.h>
-int main() {
+int main()
+{
     int year;
     printf("Enter a year: ");
     scanf("%d", &year);
@@ -13,3 +14,4 @@ int main() {
 
     return 0;
 }
+
