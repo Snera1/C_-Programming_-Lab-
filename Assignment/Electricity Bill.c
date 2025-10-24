@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     int units;
     float bill = 0;
 
@@ -22,3 +23,4 @@ int main() {
     return 0;
 
 }
+
