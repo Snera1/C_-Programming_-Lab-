@@ -17,8 +17,8 @@ int main() {
         bill = 100 * 1.5 + 100 * 2 + 100 * 3 + (units - 300) * 5;
     }
 
-    printf("Total Bill = ₹%d
-", bill);
+    printf("Total Bill = ₹%d", bill);
 
     return 0;
+
 }
