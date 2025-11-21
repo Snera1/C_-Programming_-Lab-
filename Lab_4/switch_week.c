@@ -31,16 +31,12 @@ int main() {
 		    break;	
 		default:
 	     	printf("Invalid input");
-	    	break;
-		
-			
-		
-		
-			
+	    	break;		
 			
 			
 	}
 	
 	return 0;
 }
+
 
