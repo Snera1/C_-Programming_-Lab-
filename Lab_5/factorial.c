@@ -1,22 +1,23 @@
-#include<stdio.h>
+#include <stdio.h>
+int main ()
+{
+	int n, i;
+unsigned long long factorial = 1;
 
-int main() {
-	
-	int n;
-	int fact = 1;
-	int i = 1;
-	
-	printf("enter a number");
-	scanf("%d" , &n);
-	
-	while( i <= n ) {
-		
-		fact = fact * i;
-		i++;
-	}
-	
-	printf("factorial of number %d" , fact);
-	
-	return 0;
+printf("Enter a positive number (n): ");
+scanf("%d", &n);
 
+i = 1;
+
+if ( n < 0 ) {
+printf("Enter a positive number");
+}
+else {
+while ( i <= n) {
+	factorial *= i;
+	i++;	
+}
+}
+printf("Factorial is = %d\n", factorial);
+return 0;
 }
