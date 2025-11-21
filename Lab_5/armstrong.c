@@ -1,48 +1,29 @@
-#include<stdio.h>
-
+#include <stdio.h>
 int main() {
-	
-	int num;
-	int original;
-	int pow = 0;
-	int n=0;
-	int expo;
-	int store;
-	 // int indv=1;  initialize if you are going to multiply. but do it inside the loop , otherwise it wont reset.
-	
-	printf("Pls enter a number");
-	scanf("%d" , &num);
-	
-	original = num;
-	while (original != 0) {
-		
-		original = original / 10;
-		n=n+1;
-	}
-	
-	original = num;
-	while( original !=0) {
-		
-		store= original % 10;
-		int indv=1;
-		
-		for( expo=1 ; expo <= n; expo++) { 
-			indv = indv * store;
-			
-		} pow= pow + indv;
-		  original= original /10;
-		  
+    int num, original, n = 0, sum = 0;
 
-	
-	}
-	
-	if(pow==num) {
-		printf("Armstrong");
-	} else {
-		printf("No armstrong");
-	}
-	
-	return 0;
+    printf("Please enter a number: ");
+    scanf("%d", &num);
+
+    original = num;
+
+    while (original != 0) {
+        original /= 10;
+        n++;
+    }
+
+    original = num;
+    while (original != 0) {
+        int digit = original % 10;
+        sum += pow(digit, n);
+        original /= 10;
+    }
+
+    if (sum == num) {
+        printf("%d is an Armstrong number\n", num);
+    } else {
+        printf("%d is not an Armstrong number\n", num);
+    }
+
+    return 0;
 }
-
-
