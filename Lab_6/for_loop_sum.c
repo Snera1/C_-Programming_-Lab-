@@ -1,20 +1,12 @@
-#include<stdio.h>
+#include <stdio.h>
 
+int main() {
+    int N, sum = 0;
+    scanf("%d", &N);
 
-int main() 
-
-
-{
-	int N, count , sum ;
-	scanf("%d", &N);
-	
-	sum=0;
-	
-	for(count=1;count<=N;count++) {
-		sum=sum+count;
-	
-	}
-	
-	printf("sum=%d", sum);
-	return 0;
+    for (int i = 1; i <= N; i++) {
+        sum += i;
+    }
+    printf("sum=%d\n", sum);
+    return 0;
 }
