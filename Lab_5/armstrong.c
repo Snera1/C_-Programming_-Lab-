@@ -32,8 +32,6 @@ int main() {
 		} pow= pow + indv;
 		  original= original /10;
 		  
-		  //A for loop has three parts, separated by semicolons (;), not commas:
-		  //for (initialization; condition; increment)
 
 	
 	}
@@ -46,4 +44,5 @@ int main() {
 	
 	return 0;
 }
+
 
