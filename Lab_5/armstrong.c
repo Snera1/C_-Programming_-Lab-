@@ -5,7 +5,7 @@ int main() {
 	int num;
 	int original;
 	int pow = 0;
-	int n=0;   //initialise n, set it to zero.
+	int n=0;
 	int expo;
 	int store;
 	 // int indv=1;  initialize if you are going to multiply. but do it inside the loop , otherwise it wont reset.
@@ -26,7 +26,7 @@ int main() {
 		store= original % 10;
 		int indv=1;
 		
-		for( expo=1 ; expo <= n; expo++) {  // no need of colon as it is already defined.
+		for( expo=1 ; expo <= n; expo++) { 
 			indv = indv * store;
 			
 		} pow= pow + indv;
@@ -46,3 +46,4 @@ int main() {
 	
 	return 0;
 }
+
